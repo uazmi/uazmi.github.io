@@ -1,0 +1,111 @@
+.calculator {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 400px;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 100px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    font-size: 36px;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.calculator-keys {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    height: 80px;
+    background-color: gray;
+    border: 1px solid black;
+    font-size: 32px;
+    color: #fff;
+    width: 25%;
+    outline: none;
+}
+
+.zero-btn {
+    width: 50%;
+}
+
+.operator, .equal-sign {
+    background-color: orange;
+}
+
+button:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.operator:hover, .equal-sign:hover {
+    background-color: darkorange;
+}
+
+.headering h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    background-color: darkslategray;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.headering h2 {
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+    width: 70%;
+
+}
+
+.headering a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+.headering h1 {
+    float: left;
+    text-align: left;
+    padding-left: 20px;
+    width: 30%;
+}
+
+.headering h2:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+@media (max-width:670px ) {
+    .headering h1 {
+        width: 30%;
+        font-size: 10px;
+        padding-left: 5px;
+    }
+
+    .headering h2 {
+        width: 70%;
+        font-size: 10px;
+        padding-right: 5px;
+    }
+    .calculator {
+        width: 100%;
+        font-size: 24px;
+    }
+}
